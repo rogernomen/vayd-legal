@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de privacidad · Vayd</title>
 <meta name="description" content="Política de privacidad de la app Vayd para iOS y Android.">
+<link rel="alternate" hreflang="es" href="https://rogernomen.github.io/vayd-legal/">
+<link rel="alternate" hreflang="en" href="https://rogernomen.github.io/vayd-legal/en/">
 <style>
 :root { --bg:#E9ECF3; --card:#FFFFFF; --ink:#2E2A28; --muted:#4A4540; --line:#D9DCE3; --accent:#2F6B70; --head:#F2F4F8; }
 @media (prefers-color-scheme: dark) { :root { --bg:#16181D; --card:#1F2228; --ink:#ECEEF2; --muted:#B9BEC8; --line:#343944; --accent:#7CC3C6; --head:#272B33; } }
@@ -12,7 +14,9 @@
 body { margin:0; background:var(--bg); color:var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
 .card { background:var(--card); border:1px solid var(--line); border-radius:20px; padding: 28px 24px; }
-.marca { display:flex; align-items:center; gap:10px; margin-bottom: 18px; font-weight:800; font-size:20px; color:var(--accent); }
+.cabecera { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom: 18px; }
+.marca { display:flex; align-items:center; gap:10px; font-weight:800; font-size:20px; color:var(--accent); }
+.idioma { font-size:14px; font-weight:600; text-decoration:none; padding:6px 12px; border:1px solid var(--line); border-radius:999px; }
 .marca svg { flex-shrink:0; }
 h1 { font-size: 28px; line-height:1.2; margin: 0 0 6px; }
 .fecha { margin: 0 0 20px; color:var(--muted); font-size:14px; }
@@ -32,9 +36,12 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 <body>
 <main>
 <article class="card">
+<div class="cabecera">
 <div class="marca"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5.5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="15.5" cy="11.5" r="1"/><circle cx="18" cy="14" r="1"/></svg>Vayd</div>
+<a class="idioma" href="en/" hreflang="en" lang="en">English</a>
+</div>
 <h1>Política de privacidad</h1>
-<p class="fecha">Última actualización: 7 de noviembre de 2026</p>
+<p class="fecha">Última actualización: 13 de noviembre de 2026</p>
 <p>Esta política explica qué datos personales trata Vayd cuando usas la app, para qué los usamos, con quién los compartimos y cómo puedes ejercer tus derechos.</p>
 <h2>1. Quién es el responsable</h2>
 <p>El responsable del tratamiento de tus datos es <strong>Roger Nomen Giner</strong>, con NIF <strong>47869172P</strong> y domicilio en <strong>C/Lilium 8, 43717 La Bisbal del Penedés</strong>. Puedes escribirnos para cualquier asunto de privacidad a <strong>rogernomen@gmail.com</strong>.</p>
@@ -52,7 +59,7 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 <tbody>
 <tr>
 <td>Datos de cuenta</td>
-<td>Email, nombre o alias, contraseña (guardada cifrada, nunca en texto claro)</td>
+<td>Email, nombre, nombre de usuario (al principio uno aleatorio, que puedes cambiar), contraseña (guardada cifrada, nunca en texto claro), el estilo de la app que elijas y la fecha de tu última actividad</td>
 <td>Al crear tu cuenta</td>
 </tr>
 <tr>
@@ -62,12 +69,12 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 </tr>
 <tr>
 <td>Tu colección</td>
-<td>Juegos, plataforma, formato (físico o digital), estado (jugando, pendiente, jugado…), horas y porcentaje que anotes, wishlist, motivo de abandono</td>
+<td>Juegos, plataforma, formato (físico o digital), estado (sin empezar, empezado, terminado o abandonado) y fechas en que lo terminas o abandonas, horas y porcentaje que anotes, partidas que cronometras, wishlist y los juegos que eliges para «¿A qué jugamos?»</td>
 <td>Cuando añades o editas juegos</td>
 </tr>
 <tr>
 <td>Valoraciones y notas</td>
-<td>Tu nota sobre 10 y lo que escribas sobre un juego</td>
+<td>Tu nota sobre 10, tus notas por categoría (jugabilidad, gráficos…), lo que escribas al terminar o abandonar un juego y el idioma en que está escrito, que detectamos automáticamente en nuestro servidor</td>
 <td>Si valoras o comentas un juego</td>
 </tr>
 <tr>
@@ -97,12 +104,13 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 </tr>
 <tr>
 <td>Datos técnicos</td>
-<td>Modelo de dispositivo, versión del sistema y de la app, dirección IP y registros de errores</td>
+<td>Modelo de dispositivo, versión del sistema y de la app, idioma de la app, dirección IP y registros de errores</td>
 <td>Al usar la app</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Modo invitado.</strong> Si usas Vayd sin cuenta, tu colección se guarda solo en tu dispositivo y no nos la envías. Si más tarde creas una cuenta, la subiremos a nuestros servidores para sincronizarla.</p>
+<p><strong>Modo invitado.</strong> Si exploras Vayd sin cuenta, no guardamos ninguna colección ni datos de cuenta: para guardar tus juegos tienes que iniciar sesión. Solo tratamos los datos técnicos de las peticiones que hace la app.</p>
+<p><strong>En tu dispositivo.</strong> La app guarda en tu dispositivo tu sesión (de forma cifrada), el idioma y el estilo que elijas, para no tener que pedírtelos cada vez. La sesión y el estilo se borran al cerrar sesión, y todo, al desinstalar la app.</p>
 <p><strong>Monitorización de errores.</strong> Usamos New Relic para detectar errores y vigilar la estabilidad de la app y de nuestros servidores. Recoge datos técnicos: modelo de dispositivo, versión del sistema y de la app, dirección IP, registros de errores y tiempos de respuesta. No enviamos a New Relic tu email ni el contenido de tu colección, y no lo usamos para publicidad ni para seguirte entre apps.</p>
 <h2>3. Para qué usamos tus datos</h2>
 <p>Usamos tus datos para darte el servicio que pides y para mantener la app segura. No vendemos tus datos ni los usamos para mostrarte publicidad personalizada.</p>
@@ -127,8 +135,8 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 <td>Interés legítimo (art. 6.1.f) en ofrecer información útil; nunca se muestra tu nota con tu nombre</td>
 </tr>
 <tr>
-<td>Mostrar cuántos usuarios de Vayd tienen un juego en su wishlist, contando las wishlists de todos los usuarios de forma agregada. Solo mostramos la cifra si son 5 o más</td>
-<td>Interés legítimo (art. 6.1.f) en ofrecer información útil; nunca se muestra quién tiene un juego en su wishlist</td>
+<td>Mostrar cuántos usuarios de Vayd están jugando ahora a un juego, contando de forma agregada los que lo tienen en su hueco «Jugando ahora»</td>
+<td>Interés legítimo (art. 6.1.f) en ofrecer información útil; nunca se muestra quién está jugando</td>
 </tr>
 <tr>
 <td>Enviarte avisos de lanzamientos y novedades de tus juegos</td>
@@ -183,6 +191,11 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 <td>Alemania (UE)</td>
 </tr>
 <tr>
+<td>Cloudflare, Inc.</td>
+<td>Protección de nuestra API frente a ataques: el tráfico entre la app y la API pasa por su red, que trata tu dirección IP y las peticiones solo para entregarlas</td>
+<td>EE. UU. y red mundial</td>
+</tr>
+<tr>
 <td>Expo (650 Industries, Inc.)</td>
 <td>Envío de notificaciones push</td>
 <td>EE. UU.</td>
@@ -215,7 +228,7 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 </tbody>
 </table></div>
 <p>Microsoft y Valve no actúan siguiendo nuestras instrucciones: son responsables de los datos de tu cuenta en sus servicios, según sus propias políticas de privacidad. Solo nos conectamos a ellos si tú lo pides.</p>
-<p>Los datos de los juegos (títulos, carátulas y fechas de lanzamiento) los obtenemos de IGDB, pero a IGDB no le enviamos ningún dato tuyo.</p>
+<p>Los datos de los juegos (títulos, carátulas, capturas, vídeos y fechas de lanzamiento) los obtenemos de IGDB (Twitch Interactive, Inc.), pero a IGDB no le enviamos ningún dato tuyo. Las carátulas y capturas se descargan directamente de los servidores de IGDB, y las miniaturas de los vídeos, de los de YouTube (Google): como al abrir cualquier imagen en internet, esos servidores reciben tu dirección IP. Si abres un vídeo, se reproduce en YouTube, con su propia política de privacidad.</p>
 <p>También podemos comunicar datos a autoridades y tribunales cuando la ley nos obligue.</p>
 <p><strong>Transferencias fuera de la UE.</strong> Algunos de estos proveedores están en Estados Unidos. En esos casos, la transferencia se ampara en el Marco de Privacidad de Datos UE-EE. UU., cuando el proveedor está adherido, o en las cláusulas contractuales tipo aprobadas por la Comisión Europea. Puedes pedirnos más información sobre estas garantías en rogernomen@gmail.com.</p>
 <h2>5. Cuánto tiempo guardamos tus datos</h2>
@@ -262,13 +275,13 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 </tr>
 </tbody>
 </table></div>
-<p>La nota media de la comunidad se calcula sin identificarte, así que puede seguir incluyendo tu valoración de forma anónima después de que elimines tu cuenta. En cambio, dejas de contar en el número de usuarios que desean un juego en cuanto lo quitas de tu wishlist o eliminas tu cuenta. También podemos conservar algunos datos bloqueados durante el tiempo que exija la ley, solo para atender posibles responsabilidades.</p>
+<p>La nota media de la comunidad se calcula sin identificarte, así que puede seguir incluyendo tu valoración de forma anónima después de que elimines tu cuenta. En cambio, dejas de contar entre los usuarios que están jugando a un juego en cuanto lo quitas de tu hueco «Jugando ahora» o eliminas tu cuenta. También podemos conservar algunos datos bloqueados durante el tiempo que exija la ley, solo para atender posibles responsabilidades.</p>
 <p><strong>Cómo protegemos tus datos.</strong> Las comunicaciones entre la app y nuestros servidores van cifradas (HTTPS), las contraseñas y las claves de acceso a Xbox se guardan cifradas, la base de datos solo es accesible desde nuestra API y limitamos el acceso interno a lo imprescindible. Ningún sistema es infalible: si se produjera una brecha de seguridad que afectara a tus datos, te lo comunicaríamos y lo notificaríamos a la Agencia Española de Protección de Datos cuando la ley lo exija.</p>
 <h2>6. Tus derechos</h2>
 <p>Puedes ejercer en cualquier momento estos derechos sobre tus datos:</p>
 <ul>
 <li><strong>Acceso:</strong> saber qué datos tuyos tratamos.</li>
-<li><strong>Rectificación:</strong> corregir datos inexactos. Casi todos los puedes editar tú mismo desde la app.</li>
+<li><strong>Rectificación:</strong> corregir datos inexactos. Casi todos los puedes editar tú mismo desde la app, también tu nombre de usuario.</li>
 <li><strong>Supresión:</strong> pedir que borremos tus datos. Puedes eliminar tu cuenta directamente desde <strong>Perfil → Borrar cuenta</strong>.</li>
 <li><strong>Oposición y limitación:</strong> oponerte a tratamientos basados en interés legítimo o pedir que limitemos su uso.</li>
 <li><strong>Portabilidad:</strong> recibir tu colección en un formato de uso común (CSV) para llevarla a otro servicio.</li>
@@ -281,7 +294,7 @@ footer { text-align:center; color:var(--muted); font-size:13px; margin-top: 20px
 <h2>8. Cambios en esta política</h2>
 <p>Podemos actualizar esta política para reflejar cambios en la app o en la ley. Si el cambio es importante, te avisaremos en la app antes de que entre en vigor. La fecha de la última actualización aparece siempre al principio.</p>
 <h2>9. Contacto</h2>
-<p>Para cualquier duda sobre esta política o sobre tus datos, escríbenos a <strong>rogernomen@gmail.com </strong>o a <strong>C/Lilium 8, 43717 La Bisbal del Penedés</strong>.</p>
+<p>Para cualquier duda sobre esta política o sobre tus datos, escríbenos a <strong>rogernomen@gmail.com</strong> o a <strong>C/Lilium 8, 43717 La Bisbal del Penedés</strong>.</p>
 </article>
 <footer>© 2026 Vayd</footer>
 </main>
